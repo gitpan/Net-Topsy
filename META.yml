@@ -1,6 +1,6 @@
 ---
 name: Net-Topsy
-version: 0.01_01
+version: 0.02
 author:
   - 'Jonathan Leto <jonathan@leto.net>'
 abstract: Perl Interface to the Otter API to Topsy

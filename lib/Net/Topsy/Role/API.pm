@@ -16,7 +16,6 @@ has API => ( isa => 'HashRef', is => 'ro', default => sub {
             '/searchcount' => {
                 args       => {
                     q       => 1,
-                    window  => 0,
                 },
             },
             '/profilesearch' => {
@@ -37,6 +36,7 @@ has API => ( isa => 'HashRef', is => 'ro', default => sub {
             '/stats' => {
                 args       => {
                     url       => 1,
+                    contains  => 0,
                 },
             },
             '/tags' => {
@@ -88,6 +88,12 @@ has API => ( isa => 'HashRef', is => 'ro', default => sub {
                     url     => 1,
                     page    => 0,
                     perpage => 0,
+                },
+            },
+            '/trackbackcount' => {
+                args       => {
+                    url      => 1,
+                    contains => 0,
                 },
             },
         },

@@ -5,10 +5,10 @@ use Test::Exception;
 use lib qw(t/lib);
 use Mock::LWP::UserAgent;
 use Net::Topsy;
-use Test::More tests => 12;
+use Test::More tests => 13;
 
 my @api_search_methods = qw/search searchcount profilesearch authorsearch/;
-my @api_url_methods = qw/trackbacks tags stats authorinfo urlinfo linkposts related/;
+my @api_url_methods = qw/trackbacks tags stats authorinfo urlinfo linkposts related trackbackcount/;
 
 my $nt = Net::Topsy->new( key => 'foo' );
 
