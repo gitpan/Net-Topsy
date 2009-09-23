@@ -1,6 +1,6 @@
 ---
 name: Net-Topsy
-version: 0.02
+version: 0.03
 author:
   - 'Jonathan Leto <jonathan@leto.net>'
 abstract: Perl Interface to the Otter API to Topsy
@@ -21,6 +21,11 @@ requires:
 configure_requires:
   Module::Build: 0.35
 provides:
+  Net::Topsy:
+    file: lib/Net/Topsy.pm
+    version: 0.03
+  Net::Topsy::Result:
+    file: lib/Net/Topsy/Result.pm
   Net::Topsy::Role::API:
     file: lib/Net/Topsy/Role/API.pm
 generated_by: Module::Build version 0.35
